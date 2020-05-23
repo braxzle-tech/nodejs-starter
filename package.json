@@ -1,0 +1,60 @@
+{
+  "name": "nodejs-starter",
+  "version": "0.0.1",
+  "description": "A boilerplate for starting nodejs code",
+  "keywords": [
+    "nodejs-starter",
+    "boilerplate"
+  ],
+  "private": false,
+  "main": "src/index.js",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "test": "__tests__"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest",
+    "test:watch": "cross-env NODE_ENV=test jest --watch",
+    "test:cover": "cross-env NODE_ENV=test jest --coverage",
+    "lint": "eslint \"src/**/*.js\"",
+    "start": "node ./src/index.js",
+    "start:dev": "cross-env NODE_ENV=development nodemon --exec babel-node ./src/index.js"
+  },
+  "author": {
+    "name": "Build For SDG",
+    "email": "buildforsdg@andela.com"
+  },
+  "homepage": "https://github.com/braxzle-tech/nodejs-starter#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/braxzle-tech/nodejs-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/braxzle-tech/nodejs-starter/issues"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.15",
+    "supertest": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.9.5",
+    "babel-jest": "^25.4.0",
+    "cross-env": "^7.0.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^25.4.0",
+    "nodemon": "^2.0.4",
+    "parcel-bundler": "^1.12.4"
+  },
+  "browserslist": [
+    "last 1 Chrome versions"
+  ]
+}
